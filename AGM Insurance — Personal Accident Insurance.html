@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AGM Insurance — Personal Accident Insurance</title>
+<meta property="og:title" content="AGM Insurance">
+<meta property="og:description" content="Securing Your Tomorrow Today">
+<meta property="og:image" content="https://yourwebsite.com/preview.jpg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
+<style>
+:root{--navy:#062B45;--navy2:#0b3d5f;--navy3:#041c2e;--green:#19A974;--green2:#0f7f57;--mint:#7de3bd;--white:#fff;--mute:#b9cfe0;box-sizing:border-box}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:#020e18;font-family:Georgia,'Times New Roman',serif;color:#fff;overflow:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent}
+#stage{position:relative;height:min(100%,calc(100vw*16/9));aspect-ratio:9/16;container-type:inline-size;overflow:hidden;background:var(--navy3);border-radius:2cqw;box-shadow:0 0 12cqw rgba(25,169,116,.18)}
+.s{position:absolute;inset:0;padding:12cqw 8cqw 19cqw;display:flex;flex-direction:column;justify-content:center;gap:4cqw;opacity:0;visibility:hidden;transform:scale(1.04);transition:opacity .6s,transform .7s cubic-bezier(.2,.7,.2,1),visibility .6s;overflow:hidden;
+background:radial-gradient(120% 60% at 90% 0%,rgba(25,169,116,.22),transparent 60%),radial-gradient(90% 50% at 0% 100%,rgba(11,61,95,.9),transparent 70%),linear-gradient(170deg,var(--navy2),var(--navy) 55%,var(--navy3))}
+.s::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:8cqw 8cqw;-webkit-mask-image:radial-gradient(circle at 70% 20%,#000,transparent 70%);mask-image:radial-gradient(circle at 70% 20%,#000,transparent 70%);pointer-events:none}
+.s.on{opacity:1;visibility:visible;transform:none}
+.s.on>*:not(.orb):not(.bg){animation:up .75s cubic-bezier(.2,.7,.2,1) both}
+.s.on>*:nth-child(3){animation-delay:.08s}.s.on>*:nth-child(4){animation-delay:.16s}.s.on>*:nth-child(5){animation-delay:.24s}.s.on>*:nth-child(6){animation-delay:.32s}.s.on>*:nth-child(7){animation-delay:.4s}.s.on>*:nth-child(8){animation-delay:.48s}
+@keyframes up{from{opacity:0;transform:translateY(5cqw) scale(.98)}to{opacity:1;transform:none}}
+@keyframes flt{from{transform:translateY(0) scale(1)}to{transform:translateY(-4cqw) scale(1.08)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+@keyframes shine{from{background-position:0 50%}to{background-position:200% 50%}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.orb{position:absolute;border-radius:50%;filter:blur(7cqw);animation:flt 7s ease-in-out infinite alternate;translate:calc(var(--px,0)*5cqw) calc(var(--py,0)*5cqw);pointer-events:none;z-index:0}
+.o1{width:60cqw;height:60cqw;right:-20cqw;top:-8cqw;background:rgba(25,169,116,.35)}
+.o2{width:50cqw;height:50cqw;left:-22cqw;bottom:10cqw;background:rgba(30,110,170,.4);animation-delay:-3s}
+.ring{position:absolute;border-radius:50%;border:.35cqw solid rgba(125,227,189,.25);pointer-events:none;translate:calc(var(--px,0)*-3cqw) calc(var(--py,0)*-3cqw)}
+.s>*{position:relative;z-index:1}.s>.orb,.s>.ring,.s>.bg{position:absolute}
+.brand{font:700 3.1cqw/1 system-ui,sans-serif;letter-spacing:.4em;color:var(--mint);display:flex;align-items:center;gap:2.5cqw}
+.brand::before{content:"";width:8cqw;height:.5cqw;background:var(--green);border-radius:9px}
+.k{font:600 3.2cqw/1.3 system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--mint)}
+h1{font-size:12cqw;line-height:1.02;letter-spacing:-.02em}
+h2{font-size:9.5cqw;line-height:1.05;letter-spacing:-.01em}
+.g{background:linear-gradient(90deg,var(--green),var(--mint),var(--green));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite}
+.sub{font:500 4cqw/1.55 system-ui,sans-serif;color:var(--mute)}
+.glass{position:relative;background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.04));backdrop-filter:blur(3cqw);-webkit-backdrop-filter:blur(3cqw);border:1px solid rgba(255,255,255,.16);border-radius:5cqw;padding:5cqw;box-shadow:0 5cqw 11cqw rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.28);transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.glass:hover,.glass:active{transform:translateY(-1cqw) scale(1.015);box-shadow:0 7cqw 13cqw rgba(0,0,0,.4),0 0 6cqw rgba(25,169,116,.35),inset 0 1px 0 rgba(255,255,255,.3)}
+.gb{border:.4cqw solid transparent;background:linear-gradient(var(--navy),var(--navy)) padding-box,linear-gradient(135deg,var(--green),rgba(255,255,255,.15) 45%,var(--green2)) border-box}
+.num{font-weight:700;line-height:1;text-shadow:0 0 8cqw rgba(25,169,116,.5)}
+.lab{font:600 3.2cqw system-ui,sans-serif;letter-spacing:.18em;color:var(--mute);text-transform:uppercase}
+.btn{position:relative;display:block;text-align:center;text-decoration:none;border:0;cursor:pointer;color:#fff;background:linear-gradient(135deg,var(--green),var(--green2));font:700 4.6cqw system-ui,sans-serif;letter-spacing:.1em;padding:5cqw;border-radius:99px;box-shadow:0 3cqw 9cqw rgba(25,169,116,.5),inset 0 1px 0 rgba(255,255,255,.4);transition:transform .35s,box-shadow .35s;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:sw 3.5s ease-in-out infinite}
+@keyframes sw{0%{left:-60%}60%,100%{left:130%}}
+.btn:hover,.btn:active{transform:translateY(-.8cqw) scale(1.03);box-shadow:0 4cqw 12cqw rgba(25,169,116,.7)}
+.ic{width:11cqw;height:11cqw;border-radius:3.2cqw;background:linear-gradient(135deg,rgba(25,169,116,.35),rgba(25,169,116,.08));border:1px solid rgba(125,227,189,.4);display:flex;align-items:center;justify-content:center;gap:.5cqw;color:var(--mint);flex:none}
+.ic svg{width:6cqw;height:6cqw;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.art{position:absolute;z-index:0;color:#fff}.art svg{width:100%;height:100%;display:block}
+.disc{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.22),rgba(25,169,116,.28) 55%,rgba(6,43,69,.2));border:1px solid rgba(255,255,255,.2);box-shadow:0 0 12cqw rgba(25,169,116,.4);animation:flt 6s ease-in-out infinite alternate}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.cv{display:flex;flex-direction:column;gap:3cqw;padding:4cqw;font:600 3.6cqw/1.25 system-ui,sans-serif}
+.fine{font:400 2.8cqw/1.5 system-ui,sans-serif;color:var(--mute)}
+a.l{display:block;color:#fff;text-decoration:none;font:600 5.2cqw/1.3 system-ui,sans-serif}
+a.l:hover{color:var(--mint)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:3cqw}
+.chk{display:flex;gap:4cqw;align-items:center;font:600 4.4cqw/1.3 system-ui,sans-serif;color:var(--navy);padding:3.5cqw 0;border-bottom:1px solid rgba(6,43,69,.1)}
+.chk:last-child{border:0}
+.chk i{flex:none;width:9cqw;height:9cqw;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green2));display:grid;place-items:center;box-shadow:0 1.5cqw 4cqw rgba(25,169,116,.45)}
+.chk svg{width:5cqw;height:5cqw;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:24;stroke-dashoffset:24}
+.s.on .chk svg{animation:draw .6s .7s forwards}.s.on .chk:nth-child(2) svg{animation-delay:1s}.s.on .chk:nth-child(3) svg{animation-delay:1.3s}
+.nav{position:absolute;left:0;right:0;bottom:0;padding:4cqw 6cqw 5cqw;display:flex;align-items:center;justify-content:space-between;z-index:20;background:linear-gradient(transparent,rgba(2,14,24,.85))}
+.nav button{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.12);color:#fff;font:700 3.6cqw system-ui,sans-serif;letter-spacing:.08em;padding:3cqw 5.5cqw;border-radius:99px;cursor:pointer;backdrop-filter:blur(8px);transition:transform .3s,background .3s}
+.nav button:hover{transform:scale(1.06);background:rgba(255,255,255,.22)}
+.nav .n{background:linear-gradient(135deg,var(--green),var(--green2));border:0}
+#num{font:600 3.4cqw system-ui,sans-serif;letter-spacing:.14em}
+#bar{position:absolute;top:0;left:0;height:1.1cqw;background:linear-gradient(90deg,var(--green),var(--mint));box-shadow:0 0 3cqw var(--green);z-index:20;transition:width .5s}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="heart" viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></symbol>
+<symbol id="hand" viewBox="0 0 24 24"><path d="M8 14V5a1.5 1.5 0 0 1 3 0v6M11 11V3.5a1.5 1.5 0 0 1 3 0V11M14 11V5a1.5 1.5 0 0 1 3 0v8c0 4-2 7-6 7-3 0-4.5-2-6-4.5L4 13.5A1.5 1.5 0 0 1 6.5 12L8 14"/></symbol>
+<symbol id="foot" viewBox="0 0 24 24"><path d="M9 3c2 0 3 2 3 5s-1 5-1 8c0 2 1 3 1 5H7c-1-2-1-4-1-7 0-4 1-11 3-11zM15.5 5v.1M18 8v.1M19 11.5v.1"/></symbol>
+<symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+<symbol id="fing" viewBox="0 0 24 24"><path d="M6 12V6M10 12V3M14 12V4M18 12V7M3 15l3 5h12l3-5"/></symbol>
+<symbol id="ck" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></symbol>
+<symbol id="fam" viewBox="0 0 200 200"><path d="M26 100C26 34 174 34 174 100" fill="none" stroke="#19A974" stroke-width="5" stroke-linecap="round"/><circle cx="62" cy="104" r="15" fill="#fff" opacity=".92"/><path d="M38 178c0-30 10-56 24-56s24 26 24 56z" fill="#fff" opacity=".85"/><circle cx="138" cy="104" r="15" fill="#fff" opacity=".92"/><path d="M114 178c0-30 10-56 24-56s24 26 24 56z" fill="#fff" opacity=".85"/><circle cx="100" cy="130" r="11" fill="#7de3bd"/><path d="M84 178c0-18 6-30 16-30s16 12 16 30z" fill="#19A974"/></symbol>
+</defs></svg>
+
+<div id="stage"><div id="bar"></div>
+
+<!-- 1 -->
+<section class="s">
+ <div class="orb o1"></div><div class="orb o2"></div>
+ <div class="disc" style="width:70cqw;height:70cqw;right:-8cqw;top:9cqw"></div>
+ <div class="art" style="width:66cqw;height:66cqw;right:-6cqw;top:11cqw"><svg><use href="#fam"/></svg></div>
+ <div class="brand">AGM INSURANCE</div>
+ <div style="height:36cqw"></div>
+ <div class="k" style="animation:pulse 3s infinite">● Personal Accident Insurance</div>
+ <h1>SECURING YOUR<br><span class="g">TOMORROW TODAY</span></h1>
+ <div class="glass gb"><div class="row"><div><div class="num" style="font-size:15cqw">₱100k</div><div class="lab">Coverage</div></div><div style="text-align:right"><div class="lab">For only</div><div class="num g" style="font-size:15cqw">₱140</div></div></div></div>
+ <p class="sub">“Prepare for the unexpected.”</p>
+ <button class="btn" data-go="1">LEARN MORE →</button>
+</section>
+
+<!-- 2 -->
+<section class="s">
+ <div class="orb o1"></div><div class="orb o2"></div><div class="ring" style="width:60cqw;height:60cqw;right:-15cqw;top:8cqw"></div><div class="ring" style="width:30cqw;height:30cqw;left:6cqw;bottom:30cqw"></div>
+ <div class="brand">AGM INSURANCE</div>
+ <div class="row" style="align-items:flex-start">
+  <h2 style="font-size:10.5cqw">BE PREPARED<br>FOR THE<br><span class="g">UNEXPECTED.</span></h2>
+  <div class="disc" style="position:relative;flex:none;width:32cqw;height:32cqw;margin-top:4cqw"><div class="art" style="inset:3cqw"><svg><use href="#fam"/></svg></div></div>
+ </div>
+ <p class="sub">“Accidents can happen unexpectedly. While we cannot predict every event, we can take steps to prepare.”</p>
+ <div class="glass gb" style="animation:none"><div class="k">Preparation starts today.</div></div>
+ <div class="glass" style="border-left:1.2cqw solid var(--green)"><b style="font:700 4.8cqw/1.3 system-ui,sans-serif">THAT'S WHERE PERSONAL ACCIDENT PROTECTION CAN HELP.</b></div>
+</section>
+
+<!-- 3 -->
+<section class="s">
+ <div class="orb o1"></div><div class="orb o2"></div>
+ <div class="art" style="width:95cqw;height:95cqw;right:-25cqw;top:22cqw;opacity:.08;color:var(--mint)"><svg fill="none" stroke="currentColor" stroke-width=".5"><use href="#shield"/></svg></div>
+ <div class="brand">AGM INSURANCE</div>
+ <h2>PERSONAL ACCIDENT INSURANCE</h2>
+ <p class="sub">“Financial protection for covered accidental losses, subject to the official policy terms.”</p>
+ <div class="glass gb"><div class="num" style="font-size:13cqw">₱100,000</div><div class="lab">Principal Sum</div></div>
+ <div class="glass gb"><div class="num g" style="font-size:13cqw">₱140</div><div class="lab">Premium</div></div>
+ <div class="glass gb"><div class="num" style="font-size:13cqw">1 YEAR</div><div class="lab">Coverage Period</div></div>
+</section>
+
+<!-- 4 -->
+<section class="s">
+ <div class="orb o1"></div><div class="orb o2"></div>
+ <div class="brand">AGM INSURANCE</div>
+ <h2>WHAT CAN BE <span class="g">COVERED?</span></h2>
+ <div class="grid">
+  <div class="glass cv"><i class="ic"><svg><use href="#heart"/></svg></i>Life</div>
+  <div class="glass cv"><i class="ic"><svg><use href="#hand"/></svg><svg><use href="#hand"/></svg></i>Two hands</div>
+  <div class="glass cv"><i class="ic"><svg><use href="#foot"/></svg><svg><use href="#foot"/></svg></i>Two feet</div>
+  <div class="glass cv"><i class="ic"><svg><use href="#eye"/></svg><svg><use href="#eye"/></svg></i>Sight of two eyes</div>
+  <div class="glass cv"><i class="ic"><svg><use href="#hand"/></svg><svg><use href="#foot"/></svg></i>One hand and one foot</div>
+  <div class="glass cv"><i class="ic"><svg><use href="#hand"/></svg><svg><use href="#eye"/></svg></i>One hand and sight of one eye</div>
+  <div class="glass cv"><i class="ic"><svg><use href="#foot"/></svg><svg><use href="#eye"/></svg></i>One foot and sight of one eye</div>
+  <div class="glass cv"><i class="ic"><svg><use href="#fing"/></svg></i>All fingers and both thumbs</div>
+ </div>
+ <p class="fine">Covered losses are subject to the official policy terms.</p>
+</section>
+
+<!-- 5 -->
+<section class="s">
+ <div class="orb o1"></div><div class="orb o2"></div>
+ <div class="brand">AGM INSURANCE</div>
+ <h2>PARTIAL LOSS <span class="g">BENEFITS</span></h2>
+ <div class="glass gb"><div class="row"><div><div class="k">One hand<br>or one foot</div><div class="lab" style="margin-top:2cqw">Principal Sum</div></div><div class="ic" style="width:24cqw;height:24cqw;border-radius:50%"><svg style="width:11cqw;height:11cqw"><use href="#hand"/></svg><svg style="width:11cqw;height:11cqw"><use href="#foot"/></svg></div></div><div class="num g" style="font-size:22cqw;margin-top:2cqw">½</div></div>
+ <div class="glass gb"><div class="row"><div><div class="k">Sight<br>of one eye</div><div class="lab" style="margin-top:2cqw">Principal Sum</div></div><div class="ic" style="width:24cqw;height:24cqw;border-radius:50%"><svg style="width:14cqw;height:14cqw"><use href="#eye"/></svg></div></div><div class="num g" style="font-size:22cqw;margin-top:2cqw">½</div></div>
+ <p class="sub" style="font-size:3.4cqw">One-half of the Principal Sum, subject to the official policy terms.</p>
+</section>
+
+<!-- 6 -->
+<section class="s" style="align-items:center;text-align:center">
+ <div class="orb o1"></div><div class="orb o2"></div>
+ <div class="art" style="width:120cqw;height:120cqw;left:-10cqw;bottom:-8cqw;opacity:.09"><svg><use href="#fam"/></svg></div>
+ <div class="brand">AGM INSURANCE</div>
+ <div class="k">Who is eligible?</div>
+ <div style="position:relative;width:78cqw;height:78cqw;display:grid;place-items:center">
+  <div style="position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--green),transparent 30%,var(--mint) 60%,transparent 85%,var(--green));animation:spin 14s linear infinite;-webkit-mask:radial-gradient(circle,transparent 62%,#000 63%);mask:radial-gradient(circle,transparent 62%,#000 63%)"></div>
+  <div style="position:absolute;inset:6cqw;border-radius:50%;background:radial-gradient(circle,rgba(25,169,116,.3),rgba(6,43,69,.8) 70%);box-shadow:0 0 14cqw rgba(25,169,116,.45)"></div>
+  <div style="position:relative"><div class="num" style="font-size:23cqw">5–75</div><div class="lab" style="font-size:4cqw">Years old</div></div>
+ </div>
+ <div class="glass gb" style="width:100%"><div class="lab">Coverage period</div><div class="num g" style="font-size:11cqw;margin-top:1.5cqw">1 YEAR</div></div>
+ <p class="fine">“Eligibility and coverage are subject to the official policy terms.”</p>
+</section>
+
+<!-- 7 -->
+<section class="s" style="text-align:center;align-items:center">
+ <div class="orb o1" style="width:80cqw;height:80cqw;left:10cqw;top:15cqw"></div><div class="orb o2"></div>
+ <div class="ring" style="width:100cqw;height:100cqw;left:0;top:18cqw"></div>
+ <div class="disc" style="width:26cqw;height:26cqw;right:4cqw;top:8cqw"><div class="art" style="inset:2cqw"><svg><use href="#fam"/></svg></div></div>
+ <div class="brand" style="align-self:flex-start">AGM INSURANCE</div>
+ <div class="k">The Offer</div>
+ <div class="num" style="font-size:22cqw">₱100,000</div>
+ <h2 style="font-size:7.5cqw">PERSONAL ACCIDENT COVERAGE</h2>
+ <div style="width:100%;padding:6cqw;border-radius:6cqw;background:linear-gradient(135deg,#22c98b,var(--green) 50%,var(--green2));box-shadow:0 0 14cqw rgba(25,169,116,.65),inset 0 1px 0 rgba(255,255,255,.5)"><div class="lab" style="color:#eafff6;font-size:4cqw">Only</div><div class="num" style="font-size:26cqw;text-shadow:0 1cqw 3cqw rgba(0,0,0,.25)">₱140</div></div>
+ <p class="sub">“An opportunity to prepare for covered accidental losses.”</p>
+ <div class="k">Secure your tomorrow today</div>
+</section>
+
+<!-- 8 -->
+<section class="s" style="justify-content:flex-end">
+ <div class="orb o1"></div>
+ <div class="bg" style="left:0;right:0;top:0;height:44%;background:radial-gradient(60% 70% at 50% 20%,rgba(125,227,189,.5),transparent 70%),linear-gradient(180deg,#0f7f57,var(--navy2) 80%,transparent)"></div>
+ <div class="art" style="width:62cqw;height:62cqw;left:19cqw;top:12cqw;animation:flt 6s ease-in-out infinite alternate"><svg><use href="#fam"/></svg></div>
+ <div class="brand" style="position:absolute;top:10cqw;left:8cqw">AGM INSURANCE</div>
+ <div style="background:linear-gradient(160deg,rgba(255,255,255,.96),rgba(234,246,240,.92));backdrop-filter:blur(3cqw);border-radius:6cqw;padding:7cqw 6cqw 5cqw;box-shadow:0 -2cqw 14cqw rgba(0,0,0,.35),0 0 8cqw rgba(25,169,116,.35);color:var(--navy)">
+  <h2 style="font-size:10cqw;margin-bottom:3cqw">PREPARE <span style="color:var(--green2)">TODAY.</span></h2>
+  <div class="chk"><i><svg><use href="#ck"/></svg></i>Understand your protection options</div>
+  <div class="chk"><i><svg><use href="#ck"/></svg></i>Prepare for covered accidental losses</div>
+  <div class="chk"><i><svg><use href="#ck"/></svg></i>Take action toward financial preparedness</div>
+ </div>
+ <div class="k" style="text-align:center">Secure your tomorrow today.</div>
+</section>
+
+<!-- 9 -->
+<section class="s">
+ <div class="orb o1"></div><div class="orb o2"></div>
+ <div class="brand">AGM INSURANCE</div>
+ <h2>READY TO <span class="g">LEARN MORE?</span></h2>
+ <a class="btn" href="https://www.facebook.com/grace.molina" target="_blank" rel="noopener">MESSAGE US TODAY →</a>
+ <div class="glass gb">
+  <div class="row" style="justify-content:flex-start;gap:5cqw;margin-bottom:4cqw"><div style="width:20cqw;height:20cqw;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green2));display:grid;place-items:center;font:700 7cqw system-ui,sans-serif;box-shadow:0 0 8cqw rgba(25,169,116,.5);flex:none">GM</div><div><div class="k">Your agent</div><div style="font:700 6.2cqw/1.2 system-ui,sans-serif">GRACE MORALES</div></div></div>
+  <a class="l" href="#" data-copy="09305000541">09305000541</a><a class="l" style="margin-top:1.5cqw;font-size:4.6cqw" href="#" data-copy="choixmolina@yahoo.com">choixmolina@yahoo.com</a>
+ </div>
+ <p class="sub">“Ask about the plan, coverage, eligibility, and application process.”</p>
+ <div class="row"><div class="lab" style="color:#fff">₱100,000<br>Coverage</div><div class="lab g" style="text-align:right">₱140<br>Premium</div></div>
+</section>
+
+<!-- 10 -->
+<section class="s" style="text-align:center;align-items:center">
+ <div class="orb o1" style="width:90cqw;height:90cqw;left:5cqw;top:20cqw;animation:pulse 5s ease-in-out infinite"></div><div class="orb o2"></div>
+ <div class="art" style="width:110cqw;height:110cqw;left:-5cqw;top:5cqw;opacity:.1"><svg><use href="#fam"/></svg></div>
+ <div class="brand">AGM INSURANCE</div>
+ <h1 style="font-size:11cqw">SECURING YOUR<br><span class="g">TOMORROW TODAY</span></h1>
+ <div class="glass gb" style="width:100%"><div class="row"><div class="lab" style="color:#fff">₱100,000<br>Coverage</div><div class="lab g" style="text-align:right">₱140<br>Premium</div></div></div>
+ <div><div class="k">Grace Morales</div><a class="l" href="#" data-copy="09305000541" style="margin-top:1.5cqw">09305000541</a><a class="l" style="font-size:4.4cqw" href="#" data-copy="choixmolina@yahoo.com">choixmolina@yahoo.com</a></div>
+ <p class="fine">Benefits, exclusions, eligibility, premium, and coverage are subject to the official policy wording and current insurer approval. Please review the official policy terms before purchasing.</p>
+</section>
+
+<div class="nav"><button id="b">← BACK</button><span id="num"></span><button id="n" class="n">NEXT →</button></div>
+</div>
+<script>
+var S=[].slice.call(document.querySelectorAll('.s')),i=0,st=document.getElementById('stage'),p=function(n){return(n<10?'0':'')+n};
+function go(k){i=Math.max(0,Math.min(S.length-1,k));S.forEach(function(s,j){s.classList.toggle('on',j===i)});
+document.getElementById('num').textContent=p(i+1)+' / '+S.length;
+document.getElementById('bar').style.width=((i+1)/S.length*100)+'%';
+document.getElementById('b').style.visibility=i?'visible':'hidden';
+document.getElementById('n').style.visibility=i<S.length-1?'visible':'hidden'}
+document.getElementById('b').onclick=function(){go(i-1)};
+document.getElementById('n').onclick=function(){go(i+1)};
+[].forEach.call(document.querySelectorAll('[data-go]'),function(e){e.onclick=function(){go(+e.dataset.go)}});
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' ')go(i+1);if(e.key==='ArrowLeft')go(i-1)});
+var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});
+document.addEventListener('pointermove',function(e){var r=st.getBoundingClientRect();st.style.setProperty('--px',((e.clientX-r.left)/r.width-.5).toFixed(2));st.style.setProperty('--py',((e.clientY-r.top)/r.height-.5).toFixed(2))});
+[].forEach.call(document.querySelectorAll('[data-copy]'),function(a){a.addEventListener('click',function(e){e.preventDefault();var t=a.dataset.copy,o=a.textContent;
+function ok(){a.textContent='Copied ✓';setTimeout(function(){a.textContent=o},1500)}
+function fb(){var x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.appendChild(x);x.select();try{document.execCommand('copy')}catch(_){}document.body.removeChild(x);ok()}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb)}else fb()})});
+go(0);
+</script></body></html>
